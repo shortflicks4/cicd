@@ -7,3 +7,4 @@ app = FastAPI(title="learning cicd")
 def health():
     return {"message": "server running"}  # Fixed typo: "meaage" → "message"
 
+#nothing new
