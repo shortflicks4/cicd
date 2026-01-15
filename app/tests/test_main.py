@@ -8,3 +8,9 @@ def test_ping():
     response = client.get("/health")
     assert response.status_code == 200
     assert response.json() == {"message": "server running"}
+
+
+def test_ping1():
+    response = client.get("/health1")
+    assert response.status_code == 200
+    assert response.json() == {"message": "server running nicely"}
